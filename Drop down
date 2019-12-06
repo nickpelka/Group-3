@@ -1,0 +1,24 @@
+OptionList = [
+"Colors",
+"Blue",
+"Red",
+"Green",
+"Blue",
+"Purple"
+] 
+
+app = tk.Tk()
+
+variable = tk.StringVar(app)
+variable.set(OptionList[0])
+
+opt = tk.OptionMenu(app, variable, *OptionList)
+opt.config(width=90, font=('Helvetica', 12))
+opt.place()
+
+OptionList = tk.Frame(root, bg='pink', bd=4)
+
+
+app.mainloop()
+opt = tk.OptionMenu(app, variable, *OptionList)
+'''
